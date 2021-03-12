@@ -4,7 +4,7 @@ const express_1 = require("express");
 const users_1 = require("../controller/users");
 const router = express_1.Router();
 router.get('/', users_1.getUsers);
-router.get('/', users_1.getUser);
+router.get('/:id', users_1.getUser);
 router.post('/', users_1.postUser);
 router.put('/', users_1.putUser);
 router.delete('/', users_1.deleteUser);

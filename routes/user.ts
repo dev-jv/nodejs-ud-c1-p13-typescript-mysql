@@ -5,7 +5,7 @@ import { getUsers, getUser, postUser, putUser, deleteUser } from '../controller/
 const router = Router();
 
 router.get('/', getUsers);
-router.get('/', getUser);
+router.get('/:id', getUser);
 router.post('/', postUser);
 router.put('/', putUser);
 router.delete('/', deleteUser);
