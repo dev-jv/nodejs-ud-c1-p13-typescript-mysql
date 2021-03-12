@@ -27,9 +27,9 @@ class Server {
         try {
             await db.authenticate();
             console.log('DATABASE Online')
-        } catch (error) {
-            throw new Error(error);
-            // console.log('ERROR: ', error);
+        } catch (e) {
+            throw new Error(e);
+            // console.log('ERROR: ', e);
         }
     }
 
